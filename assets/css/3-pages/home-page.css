@@ -4,3 +4,48 @@
     background: url('../../images/background-home.png') no-repeat center;
     background-size: cover;
 }
+
+.hp-container {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.hp-container>.wrapper {
+    height: 100%;
+}
+
+.hp-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.hp-content>p {
+    padding: 10px 0 25px 0;
+}
+
+.work-btn {
+    margin-right: 20px;
+}
+
+.promo-btn {
+    position: relative;
+}
+
+.promo-btn>img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 350px) {
+    .work-btn {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}

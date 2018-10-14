@@ -6,6 +6,7 @@ header {
 }
 
 .fixed-header {
+    position: fixed;
     background-color: rgba(230, 230, 230, 0.6);
     z-index: 999;
 }
@@ -16,6 +17,7 @@ nav {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    z-index: 999;
 }
 
 nav li {
@@ -23,17 +25,17 @@ nav li {
     display: inline-block;
 }
 
-nav li:first-child {
+nav>li:first-child {
     margin-right: auto;
     padding-left: 10px;
 }
 
-nav div.menu-items-container li a {
+nav div.menu-items-container>li>a {
     text-decoration: none;
     position: relative;
-    font: 1em/normal var(--roboto);
+    font: 1.125em/normal var(--roboto);
     color: var(--black);
-    letter-spacing: 0.050em;
+    letter-spacing: 0.080em;
     padding: 5px 10px;
     margin-right: 5px;
 }
@@ -87,16 +89,16 @@ nav div.menu-items-container>li>a:hover::after {
         max-height: 0px;
         overflow: hidden;
         transition: max-height .15s linear;
+        z-index: 999;
     }
 
     nav div.menu-items-container>li>a {
-        text-align: center;
         line-height: 50px;
     }
 
     .active-nav {
         max-height: 200px !important;
-        overflow: auto !important;
+        overflow: none !important;
     }
 
 }

@@ -1,0 +1,77 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* typography */
+h1 {
+    font: 2.875em/normal var(--roboto);
+    letter-spacing: 0.080em
+}
+
+h1::first-letter {
+    color: var(--blue);
+}
+
+p {
+    font: 1.125em/27px var(--montserrat);
+    letter-spacing: 0.050em;
+}
+
+button {
+    font: 1.125em/normal var(--roboto);
+    letter-spacing: 0.050em;
+}
+
+
+/* buttons */
+button {
+    width: 145px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 15px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+button:hover {
+    box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4)
+}
+
+.scroll-btn {
+    width: 48px;
+    height: 57px;
+    background: url('../../images/icons/scroll-btn.svg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollBtn-animation .5s linear infinite;
+}
+
+@keyframes scrollBtn-animation {
+    from {
+        bottom: 30px;
+    }
+
+    to {
+        bottom: 15px;
+    }
+}
+
+/* mobile font rwd */
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
