@@ -1,6 +1,7 @@
 #home-page {
     background: url('../../images/background-home.png') no-repeat center;
     background-size: cover;
+    min-height: 500px;
 }
 
 .hp-container {

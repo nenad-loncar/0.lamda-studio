@@ -8,7 +8,7 @@
 
 .team-cards-container {
     width: 80%;
-    min-height: 262px;
+    min-height: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,7 +18,7 @@
 
 .card-container {
     width: 250px;
-    height: 300px;
+    height: 100%;
     background-color: var(--light-gray);
     border-radius: 10px;
     box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.4);
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition:  all .2s linear; 
+    transition: all .2s linear;
 }
 
 .card-header {
@@ -149,4 +149,53 @@
     transform: translateX(250px) scale(0.8);
     z-index: 8;
     opacity: 0.5;
+}
+
+
+/* RWD */
+@media screen and (max-width: 1200px) {
+    .team-content-container {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    [data-pos="4"] {
+        display: none;
+    }
+
+    [data-pos="0"] {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        width: 200px;
+    }
+
+    .card-social-media {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    [data-pos="4"] {
+        display: none;
+    }
+
+    [data-pos="0"] {
+        display: none;
+    }
+
+    [data-pos="3"] {
+        display: none;
+    }
+
+    [data-pos="1"] {
+        display: none;
+    }
 }
