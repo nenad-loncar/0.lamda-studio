@@ -1,3 +1,9 @@
+.page {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -5,25 +11,41 @@
 }
 
 
+
 /* typography */
-h1 {
-    font: 2.875em/normal var(--roboto);
-    letter-spacing: 0.080em
+h1,h2,h3{
+    letter-spacing: 0.080em;
 }
 
-h1::first-letter {
+h1 {
+    font: 2.875em/normal var(--roboto);
+}
+
+h2 {
+    font: 2em/normal var(--roboto);
+}
+
+h3 {
+    font: 1.375em/normal var(--roboto);
+}
+
+h1::first-letter,
+    h2::first-letter {
     color: var(--blue);
+}
+
+p,button {
+    letter-spacing: 0.050em;
 }
 
 p {
     font: 1.125em/27px var(--montserrat);
-    letter-spacing: 0.050em;
 }
 
 button {
     font: 1.125em/normal var(--roboto);
-    letter-spacing: 0.050em;
 }
+
 
 
 /* buttons */
