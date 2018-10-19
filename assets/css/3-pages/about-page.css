@@ -1,6 +1,7 @@
 #about-page {
     width: 100%;
     height: 100%;
+    min-width: 300px;
     min-height: 500px;
 }
 
@@ -14,11 +15,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5% 0;
+    margin: 8% 0;
 }
 
 .what-we-do-container>h2 {
-    margin-bottom: 1.5%;
+    margin-bottom: 1.8%;
 }
 
 .what-we-do-container>p {
@@ -36,27 +37,29 @@
 .goals-container>div {
     width: 45%;
     text-align: center;
+    margin-bottom: 8%;
 }
 
 .goals-container>div>h2 {
-    margin-bottom: 1.5%;
+    margin-bottom: 1.8%;
 }
 
 
 .team-container {
     width: 100%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.team-container > .team-heading {
+.team-container>.team-heading {
     width: 100%;
     text-align: center;
 }
 
-.team-container > .team-heading > h2 {
-    margin-bottom: 1.5%;
+.team-container>.team-heading>h2 {
+    margin-bottom: 1.8%;
 }
 
 .team-content-container {
@@ -65,7 +68,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 5% 0;
+    margin: 8% 0 2% 0;
 }
 
 .arrow {
@@ -75,6 +78,7 @@
     display: block;
     background-size: cover;
     cursor: pointer;
+    background: transparent;
 }
 
 .left {
@@ -86,5 +90,29 @@
 }
 
 .arrow:hover {
-    box-shadow: 0px 0px 10px var(--dark-gray);
+    box-shadow: 0 0 10px var(--dark-gray);
+}
+
+
+/* about page rwd */
+
+@media only screen and (max-width: 768px) {
+
+    .team-content-container {
+        width: 95%;
+    }
+
+    .what-we-do-container>p {
+        width: 95%;
+        text-align: center;
+    }
+
+    .goals-container {
+        flex-direction: column;
+    }
+
+    .goals-container>div {
+        width: 95%;
+
+    }
 }

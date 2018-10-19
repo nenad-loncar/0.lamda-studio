@@ -1,5 +1,5 @@
 .team-cards-container {
-    width: 80%;
+    width: 85%;
     min-height: 300px;
     display: flex;
     flex-direction: row;
@@ -11,8 +11,6 @@
 .card-container {
     width: 35%;
     height: 100%;
-    min-width: 200px;
-    min-height: 300px;
     background-color: var(--light-gray);
     border-radius: 10px;
     box-shadow: 0px 0px 9.5px 0.5px rgba(0, 0, 0, 0.4);
@@ -20,12 +18,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     transition: all .2s linear;
 }
 
 .card-header {
     width: 100%;
-    height: 90px;
+    height: 45%;
     background-color: var(--blue);
     position: relative;
 }
@@ -76,13 +75,22 @@
     background: url('../../images/team-images/5.jpg') no-repeat center;
 }
 
-.card-content {
-    margin-top: 25%;
+.card-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.card-body-content {
     width: 100%;
     text-align: center;
 }
 
-.card-content>p {
+.card-body-content>p {
     margin: 1.8% 0 1.8% 0;
     font-size: 0.875em;
 }
@@ -116,31 +124,118 @@
 
 
 [data-pos="0"] {
-    transform: translateX(-250px) scale(0.8);
+    transform: translateX(-100%) scale(0.8);
     z-index: 8;
     opacity: 0.5;
 }
 
 [data-pos="1"] {
-    transform: translateX(-150px);
+    transform: translateX(-60%);
     z-index: 9;
     opacity: 0.8
 }
 
 [data-pos="2"] {
-    transform: translateX(0px) scale(1.1);
+    transform: translateX(0) scale(1.1);
     z-index: 10;
     opacity: 1
 }
 
 [data-pos="3"] {
-    transform: translateX(150px);
+    transform: translateX(60%);
     z-index: 9;
     opacity: 0.8
 }
 
 [data-pos="4"] {
-    transform: translateX(250px) scale(0.8);
+    transform: translateX(100%) scale(0.8);
     z-index: 8;
     opacity: 0.5;
+}
+
+
+/* team cards rwd */
+
+@media only screen and (max-width: 950px) {
+    .card-social-media {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .card-social-media {
+        width: 75%;
+    }
+
+    .team-cards-container {
+        width: 80%;
+        min-height: 280px;
+    }
+
+    .card-container {
+        width: 45%;
+    }
+
+
+    [data-pos="4"] {
+        display: none;
+    }
+
+    [data-pos="0"] {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+
+    .card-body {
+        margin-top: 10%;
+    }
+
+    .card-body-content>p {
+        font-size: 0.750em;
+
+    }
+
+    .team-cards-container {
+        width: 90%;
+    }
+
+    .card-container {
+        width: 60%;
+    }
+
+    .card-social-media {
+        width: 70%;
+    }
+
+    [data-pos="4"] {
+        display: none;
+    }
+
+    [data-pos="0"] {
+        display: none;
+    }
+
+    [data-pos="1"] {
+        display: none;
+    }
+
+    [data-pos="3"] {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card-container {
+        width: 70%;
+    }
+
+    .card-social-media {
+        width: 85%;
+    }
+
 }
