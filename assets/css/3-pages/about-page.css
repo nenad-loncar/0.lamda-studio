@@ -78,7 +78,7 @@
     display: block;
     background-size: cover;
     cursor: pointer;
-    background: transparent;
+    transition: all .2s linear;
 }
 
 .left {
@@ -90,7 +90,7 @@
 }
 
 .arrow:hover {
-    box-shadow: 0 0 10px var(--dark-gray);
+    transform: scale(1.1);
 }
 
 
