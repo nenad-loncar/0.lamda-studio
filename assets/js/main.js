@@ -73,21 +73,23 @@ window.onload = function () {
 
 
 
+/* testmonial slider */
+
+let testmonialCards = document.querySelectorAll('.testmonials-card-container > div'),
+dots = document.querySelectorAll('.indicators > span'),
+testmonialCardArray = Array.from(testmonialCards),
+dotsArray = Array.from(dots),
+testNumerator = 1;
+   
+function slideTestmonial()  {
+
+ 
+
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+setInterval(slideTestmonial,1000);
 
 
 
