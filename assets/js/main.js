@@ -73,25 +73,56 @@ window.onload = function () {
 
 
 
-/* testmonial slider */
+        /* testmonial slider */
+        let testmonialCards = document.querySelectorAll('.testmonials-card-container > div'),
+            dots = document.querySelectorAll('.indicators > span'),
+            testmonialCardArray = Array.from(testmonialCards),
+            dotsArray = Array.from(dots),
+            testNumerator = 1;
 
-let testmonialCards = document.querySelectorAll('.testmonials-card-container > div'),
-dots = document.querySelectorAll('.indicators > span'),
-testmonialCardArray = Array.from(testmonialCards),
-dotsArray = Array.from(dots),
-testNumerator = 1;
-   
-function slideTestmonial()  {
+        function slideTestmonial() {
+            if (testNumerator == 1) {
 
- 
+                testmonialCardArray[0].style.transform = "translateX(-170%)";
+                testmonialCardArray[0].style.zIndex = "0";
+                testmonialCardArray[1].style.transform = "translateX(-50%)";
+                testmonialCardArray[1].style.zIndex = "2";
+                testmonialCardArray[2].style.transform = "translateX(70%)";
+                testmonialCardArray[2].style.zIndex = "1";
 
-}
+                dots[1].classList.add('active');
+                dots[0].classList.remove('active');
+                testNumerator++;
+            } else if (testNumerator == 2) {
 
+                testmonialCardArray[2].style.transform = "translateX(-170%)";
+                testmonialCardArray[2].style.zIndex = "0";
+                testmonialCardArray[0].style.transform = "translateX(-50%)";
+                testmonialCardArray[0].style.zIndex = "2";
+                testmonialCardArray[1].style.transform = "translateX(70%)";
+                testmonialCardArray[1].style.zIndex = "1";
 
+                dots[2].classList.add('active');
+                dots[1].classList.remove('active');
+                testNumerator++;
+            } else if (testNumerator == 3) {
 
-setInterval(slideTestmonial,1000);
+                testmonialCardArray[1].style.transform = "translateX(-170%)";
+                testmonialCardArray[1].style.zIndex = "0";
+                testmonialCardArray[2].style.transform = "translateX(-50%)";
+                testmonialCardArray[2].style.zIndex = "2";
+                testmonialCardArray[0].style.transform = "translateX(70%)";
+                testmonialCardArray[0].style.zIndex = "1";
+                testNumerator++;
+                dots[0].classList.add('active');
+                dots[2].classList.remove('active');
 
+            } else {
+                testNumerator = 1;
+            }
+        }
 
+        setInterval(slideTestmonial, 4000);
 
 
 

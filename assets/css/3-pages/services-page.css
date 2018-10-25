@@ -74,6 +74,7 @@
     align-items: center;
     text-align: center;
     padding: 1.5%;
+    transition: all 0.6s linear;
 }
 
 .testmonials-card-container>div>h3 {
@@ -99,7 +100,8 @@
     height: 25px;
     border-radius: 50%;
     background-color: var(--blue);
-    opacity: 0.5;
+    opacity: 0.3;
+    transition: all 0.3s linear;
 }
 
 .indicators>.active {
@@ -113,14 +115,6 @@
 
     .testmonials-card-container {
         margin: 1.5% 0;
-    }
-
-    .testmonials-card-container>div:first-child {
-        transform: translateX(-160%);
-    }
-
-    .testmonials-card-container>div:last-child {
-        transform: translateX(60%);
     }
 
     .indicators {
@@ -147,14 +141,6 @@
 
     .testmonials-card-container>div {
         min-width: 500px;
-    }
-
-    .testmonials-card-container>div:first-child {
-        transform: translateX(-160%);
-    }
-
-    .testmonials-card-container>div:last-child {
-        transform: translateX(60%);
     }
 
     .indicators {
