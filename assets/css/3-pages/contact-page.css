@@ -60,7 +60,7 @@
     justify-content: space-between;
 }
 
-.wrapper>.social-media-container>div>img {
+.wrapper>.social-media-container>div>a>img {
     width: 80px;
     height: 80px;
 }
