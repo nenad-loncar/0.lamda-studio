@@ -39,8 +39,8 @@ button,
     letter-spacing: 0.050em;
 }
 
-p,
-label {
+p,label
+ {
     font: 1.125em/27px var(--montserrat);
 }
 
@@ -98,7 +98,7 @@ input[type="button"]:hover {
         font-size: 2em;
     }
 
-    p {
+    p,label {
         font-size: 1em;
     }
 

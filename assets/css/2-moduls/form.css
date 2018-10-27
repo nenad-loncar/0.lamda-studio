@@ -24,7 +24,7 @@
 }
 
 .msg-row {
-    margin: 8% 0;
+    margin: 10% 0;
 }
 
 .top-row>div {
@@ -90,7 +90,41 @@ input[type="text"]:focus~label {
 }
 
 textarea:focus~label {
-    top: -35px;
+    top: -30px;
     left: 0px;
 }
 
+
+/* rwd */
+@media screen and (max-width:768px) {
+    .form-container {
+        width: 100%;
+    }
+
+    .top-row {
+        align-content: space-between;
+        flex-direction: column;
+    }
+
+    .top-row>div {
+        width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .msg-row {
+        margin: 0 0 10% 0;
+    }
+}
+
+
+
+@media screen and (max-width:550px) {
+    .top-row>div {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .msg-row {
+        margin: 0% 0 15% 0;
+    }
+}
