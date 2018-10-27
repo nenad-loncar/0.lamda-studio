@@ -26,27 +26,34 @@ h3 {
 }
 
 h1::first-letter,
-h2::first-letter {
+h2::first-letter,
+label::first-letter,
+.contact-info>div>span>h3::first-letter,
+.wrapper>.social-media-container>h3::first-letter {
     color: var(--blue);
 }
 
 p,
-button {
+button,
+.btn-row>input[type="button"] {
     letter-spacing: 0.050em;
 }
 
-p {
+p,
+label {
     font: 1.125em/27px var(--montserrat);
 }
 
-button {
+button,
+input[type="button"] {
     font: 1.125em/normal var(--roboto);
 }
 
 
 
 /* buttons */
-button {
+button,
+input[type="button"] {
     width: 145px;
     height: 45px;
     line-height: 45px;
@@ -58,7 +65,8 @@ button {
     color: var(--white);
 }
 
-button:hover {
+button:hover,
+input[type="button"]:hover {
     box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4)
 }
 
