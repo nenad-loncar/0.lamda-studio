@@ -7,7 +7,7 @@ header {
 
 .fixed-header {
     position: fixed;
-    background-color: rgba(230, 230, 230, 0.6);
+    background-color: rgb(230, 230, 230);
     z-index: 999;
 }
 
@@ -82,7 +82,7 @@ nav div.menu-items-container>li>a:hover::after {
 
     nav div.menu-items-container {
         width: 100%;
-        background-color: rgba(230, 230, 230, 0.6);
+        background-color: rgb(230, 230, 230);
         position: absolute;
         top: 60px;
         left: 0px;
