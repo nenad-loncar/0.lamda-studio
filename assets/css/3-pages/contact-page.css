@@ -85,7 +85,7 @@
 
     .contact-info>div {
         width: 100%;
-        margin-bottom: none;
+        margin-bottom: 8%;
         display: flex;
         flex-direction: column;
         align-items: center;

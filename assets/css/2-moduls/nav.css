@@ -98,7 +98,7 @@ nav div.menu-items-container>li>a:hover::after {
 
     .active-nav {
         max-height: 200px !important;
-        overflow: none !important;
+        overflow: hidden !important;
     }
 
 }

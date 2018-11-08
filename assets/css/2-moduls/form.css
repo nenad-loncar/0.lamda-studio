@@ -53,21 +53,6 @@ input[type="text"] {
 
 }
 
-[data-input-container] {
-    position: relative;
-}
-
-label {
-    position: absolute;
-    left: 30px;
-    transition: all 0.15s linear;
-}
-
-.top-row label {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .msg-row label {
     top: 30px;
 }
@@ -84,14 +69,10 @@ label {
     justify-content: start;
 }
 
-input[type="text"]:focus~label {
-    top: -20px;
-    left: 0px;
-}
-
-textarea:focus~label {
-    top: -30px;
-    left: 0px;
+::placeholder {
+    font-size: 1.125em;
+    letter-spacing: 0.050em;
+    font-family: var(--montserrat);
 }
 
 

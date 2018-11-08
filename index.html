@@ -257,7 +257,7 @@
         <div class="contact-container">
 
           <div class="contact-info">
-            
+
             <div>
               <img src="/assets/images/contact-imformation/address.svg" alt="address icon">
               <span>
@@ -267,7 +267,7 @@
                   Georgia</p>
               </span>
             </div>
-            
+
             <div>
               <img src="/assets/images/contact-imformation/phone.svg" alt="phone icon">
               <span>
@@ -275,7 +275,7 @@
                 <p>478-451-4390</p>
               </span>
             </div>
-           
+
             <div>
               <img src="/assets/images/contact-imformation/email.svg" alt="email icon">
               <span>
@@ -283,31 +283,26 @@
                 <p>lamdastudio@gmail.com</p>
               </span>
             </div>
-          
+
           </div>
 
           <div class="form-container">
-            <form action="" method="GET">
+            <form id="myform" action="" method="GET">
               <div class="top-row">
-                <div data-input-container>
-                  <input id="name" name="name" type="text">
-                  <label for="name">Name</label>
+                <div>
+                  <input data-element id="name" name="name" type="text" placeholder="Name">
                 </div>
-                <div data-input-container>
-                  <input id="lastname" name="lastname" type="text">
-                  <label for="name">Last name</label>
+                <div>
+                  <input data-element id="lastname" name="lastname" type="text" placeholder="Last Name">
                 </div>
               </div>
-              <div data-input-container class="msg-row">
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <label for="message">Message</label>
+              <div class="msg-row">
+                <textarea data-element name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
               </div>
-
               <div class="btn-row">
                 <input type="button" id="submit" name="submit" value="Submit">
                 <input type="button" id="reset" name="reset" value="Reset">
               </div>
-
             </form>
           </div>
 
