@@ -119,7 +119,7 @@ window.onload = function () {
         }
     }
 
-    setInterval(slideTestmonial, 4000);
+    setInterval(slideTestmonial, 2000);
 
 
     /* valdiation form */
