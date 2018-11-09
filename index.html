@@ -42,6 +42,14 @@
         </nav>
       </header>
       <!-- end of heder -->
+         <!-- promo video -->
+          <div id="promo-player">
+            <video id="promo-video" src="assets/videos/promo.mp4"></video>
+            <div class="btn" id="play-btn"><img src="assets/images/icons/play.svg" alt="play video button"></div>
+            <div class="btn" id="close-btn"><img src="assets/images/icons/closebtn.svg" alt="close video button"></div>
+          </div>
+
+        <!-- end of promo video-->
       <!-- home page content -->
       <div class="hp-container">
         <div class="wrapper">
@@ -50,7 +58,7 @@
             <p>We create amazing stuff to grow your business...</p>
             <div class="btn-container">
               <button class="work-btn">Our work</button>
-              <button class="promo-btn"><img src="assets/images/icons/white-play.svg" alt="play button image">Promo</button>
+              <button data-promo class="promo-btn"><img src="assets/images/icons/white-play.svg" alt="play button image">Promo</button>
             </div>
           </div>
           <div class="scroll-btn"></div>
@@ -59,7 +67,7 @@
       <!-- end of home page content -->
     </section>
     <!--end of home page-->
-
+    
     <!-- about page -->
     <section id="about-page">
       <div class="wrapper">
@@ -321,6 +329,8 @@
       </div>
     </section>
     <!-- end of contact page -->
+
+    
   </main>
   <script src="assets/js/main.js"></script>
 </body>

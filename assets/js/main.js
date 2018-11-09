@@ -162,6 +162,41 @@ window.onload = function () {
         })
     }
 
+    /* promo video */
+    let promoBtn = document.querySelector('[data-promo]'),
+        promoPlayer = document.getElementById("promo-player"),
+        promo = document.getElementById("promo-video"),
+        btn = document.querySelectorAll('.btn');
+
+    promoBtn.addEventListener('click', function () {
+        promoPlayer.style.display = "block";
+    })
+
+    btn.forEach((e) => {
+        e.addEventListener('click', function () {
+            switch (e.id) {
+                case "play-btn":
+                    e.style.display = "none";
+                    promo.play();
+                    break;
+                case "close-btn":
+                    promoPlayer.style.display = "none";
+                    promo.load();
+                    btn[0].style.display = "block";
+                    break;
+            }
+        })
+    })
+
+   
+
+
+
+
+
+
+
+
 
 
 }
