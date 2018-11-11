@@ -1,0 +1,78 @@
+@import "../1-helpers/resset.css";
+@import "../1-helpers/font.css";
+@import "../1-helpers/variables.css";
+@import "../2-moduls/base.css";
+
+main {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    min-width: 300px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--light-gray);
+    position: fixed;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    width: 82px; 
+    height: 48px;
+}
+
+.close-btn {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.work-container {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.work-container > .wrapper {
+    height: 100%;
+    text-align:  center;
+}
+
+.wrapper > h1 {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1220px) {
+    header nav {
+        max-width: 992px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header nav {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header nav {
+        max-width: 300px;
+    }
+}

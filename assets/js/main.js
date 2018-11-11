@@ -188,15 +188,12 @@ window.onload = function () {
         })
     })
 
-   
+   /* open work page */
+   let workBtn = document.querySelector('.work-btn');
 
-
-
-
-
-
-
-
+   workBtn.addEventListener('click',function() {
+       window.location.href = "work.html";
+   })
 
 
 }
