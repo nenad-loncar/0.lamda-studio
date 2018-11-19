@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2%;
 }
 
 #services-page>.wrapper>h2 {
@@ -44,7 +45,7 @@
 
 .testmonials-container {
     width: 100%;
-    min-height: 450px;
+    min-height: 480px;
     background-color: var(--light-gray);
     display: flex;
     flex-direction: column;
@@ -149,6 +150,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    
+    #services-page>.wrapper {
+        padding-top: 10%;
+    }
+
     .indicators {
         width: 16.5%;
     }
@@ -159,6 +165,11 @@
 }
 
 @media screen and (max-width: 550px) {
+    
+    #services-page>.wrapper {
+        padding-top: 18%;
+    }
+
     .services-container {
         grid-template-columns: repeat(1, auto);
     }

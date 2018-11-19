@@ -70,6 +70,11 @@
 
 /* rwd */
 @media screen and (max-width:768px) {
+    
+    #contact-page>.wrapper {
+       padding-top: 18%;
+    }
+
     .contact-container {
         flex-direction: column;
         width: 100%;
